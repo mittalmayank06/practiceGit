@@ -1,0 +1,73 @@
+I'm practicing GIT & upload files on GITHUB.
+
+STEP1: To get repo, 2-ways:
+	-initialize the repo (start from begining)
+	-cloning the git (get data from the server)
+->ls -lart (show us hidden files in a folder)
+
+->git status (show us the status of git)
+->git add index.html (files, which needs to add in staging area)
+	-or ->git add -A  (to put all files in staging area)
+->git status  (files put in staging area, needs to be commit)
+->git commit -m "Initial Commit"   (commit to save the file structure..)
+	-"wq ->[Enter] (to exit)
+
+[NOTE: If by mistake, 1 file got updated & u need to get back prev. commit  ]
+->git checkout [file_name]
+OR ->git checkout -f  (to get all files to last commit)
+
+
+->git log  (gives details who commit in the file)
+OR   ->git log -p -5  (tells us last 5 commit details)
+
+->git diff  (compares our modifiled file from working area to staging area)
+->git diff --stage (compares staging area with last commit)
+
+->git rm --cached  waste.html  (remove file from staging area only)
+->git rm waste.html (removes the file completely)
+
+
+->git status -s (show us files which're in staging area or working tree)
+*******************************************
+GIT-branch concept:
+ ->git branch feature1  (feature1 branch created & we can create copy of our code on this branch from master)
+
+->git branch
+(show us branches available)
+
+->git checkout feature1 (switched to feature1 branch)
+
+->git checkout -b feature2 (created & switched to branch feature2)
+->GO to MASTER branch:
+& merge with feature1 branch as:
+
+->git merge feature1  (merge repo: master with feature1)
+****************************************
+Remote repository: 
+->git remote add origin  [SSH_link of repo on github]
+//it will add code of our local repo(system) to the remote(server) repo.
+
+->git remote
+output: origin  (gives us link of server where u put our code)
+-> git push origin master (pushes code of our master to origin)
+OR  -> git push -u origin master
+
+
+->git remote set-url origin [ssh_link or http-link]
+\\this command will change the link for origin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
