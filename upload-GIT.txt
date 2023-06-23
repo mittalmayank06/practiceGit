@@ -16,7 +16,7 @@ STEP1: To get repo, 2-ways:
 ->git checkout [file_name]
 OR ->git checkout -f  (to get all files to last commit)
 
-
+  
 ->git log  (gives details who commit in the file)
 OR   ->git log -p -5  (tells us last 5 commit details)
 
